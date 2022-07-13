@@ -1,0 +1,58 @@
+.card-img-top {
+  height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: .9rem;
+}
+
+.card .delete img {
+  width: 12px;
+  height: 12px;
+}
+
+[data-anima="vanishIn"] {
+  animation: vanishIn forwards ease-in-out .4s;
+}
+
+[data-anima="vanishOut"] {
+  animation: vanishOut forwards ease-in-out .4s;
+}
+
+@keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(90px);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes vanishOut {
+  0% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(20px);
+  }
+}

@@ -1,3 +1,5 @@
+"use strict";
+
 import {
   reloadPage
 } from "./utilitarian.js";

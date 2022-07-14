@@ -1,3 +1,5 @@
+"use strict";
+
 export default function initTotalPrice(){
   const spanTotal = document.getElementById('total_price')
   const localData = window.localStorage;
